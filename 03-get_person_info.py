@@ -16,19 +16,13 @@ def get_persons(snils):
     params = dict(system=SYSTEM, code=snils)
     res = requests.get(URL, headers=HEADERS, params=params)
     json = res.json()
-    # print(json)
     print(
         json['general']['snils'],
         json['general']['lastName'],
         json['general']['firstName'],
         json['general']['patronymic'],
-        json['general']['birthDate']
-        # json['profs'][0]['specId'],
-        # #json['qualifications'][0]['specId'],
-        # #json['postgraduates'][0]['specId'],
-        # #json['educationExts'][0]['theme'],
-        # #json['educationExts'][0]['specId']
-        , file=file_persons
+        json['general']['birthDate'],
+        file=file_persons
     )
 
 while True:

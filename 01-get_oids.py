@@ -23,4 +23,3 @@ json = res.json()
 size = len(json['parameter'][0]['resource']['expansion']['contains'])
 for i in range(0, size):
     print(json['parameter'][0]['resource']['expansion']['contains'][i]['code'])
-    # print(json['parameter'][0]['resource']['expansion']['contains'][i]['display'])
