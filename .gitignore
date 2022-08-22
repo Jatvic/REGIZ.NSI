@@ -1,0 +1,5 @@
+variables.py
+*.txt
+__pycache__
+persons
+main.py
